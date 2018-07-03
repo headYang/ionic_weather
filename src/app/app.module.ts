@@ -9,11 +9,11 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import { SettingsPage } from '../pages/settings/settings';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { WeatherProvider } from '../providers/weather/weather';
+import { SettingsPageModule } from '../pages/settings/settings.module';
 
 @NgModule({
   declarations: [
@@ -21,14 +21,14 @@ import { WeatherProvider } from '../providers/weather/weather';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
-    SettingsPage
+    TabsPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule,
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    SettingsPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -36,8 +36,7 @@ import { WeatherProvider } from '../providers/weather/weather';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
-    SettingsPage
+    TabsPage
   ],
   providers: [
     StatusBar,

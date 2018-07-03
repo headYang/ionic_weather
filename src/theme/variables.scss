@@ -11,16 +11,17 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
-  nav_top_bottom: #452d8c
+  nav_top_bottom: #435d8c
 );
 
+$searchbar-ios-background-color: none;
+$searchbar-md-input-border-radius: 30px;
 $toolbar-background: color($colors, nav_top_bottom);
 
 $tabs-background: color($colors, nav_top_bottom);
 $tabs-tab-color-active: color($colors, light);
 $tabs-tab-color: color($colors, light);
 $tabs-tab-text-color: color($colors, light);
-$background-color: color($colors, primary);
 
 
 @import "ionic.theme.default";
