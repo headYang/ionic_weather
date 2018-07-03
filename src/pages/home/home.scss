@@ -1,3 +1,18 @@
 page-home {
-
+    .home {
+        background-color: color($colors, primary);
+        color: color($colors, light);
+        margin-top: 30px;
+    }
+    .tabs-md .tab-button-icon {
+        color: #ccc;
+    }
+    .temp {
+        font-size: 90px;
+        text-align: center;
+        font-weight: normal;
+    }
+    .location, .icon, .desc{
+        text-align: center;
+    }
 }
